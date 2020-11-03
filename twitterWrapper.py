@@ -6,7 +6,7 @@ import os
 
 class twitterWrap:
     def __init__(self):
-        self.auth = "Bearer AAAAAAAAAAAAAAAAAAAAAJXpGgEAAAAA6H%2F1Yrym2IixdK0reD1nDRQvDe4%3DxX1nDLsJ7dSNQsvlVCHRvbdHCBkhVKCtFGw2rORNfwTnxSFRKb"
+        self.auth = XXXXXXXXXXXX
 
     #pass in a twitter usernames and returns the unique ids for the users
     def get_user_id(self,usernames):
