@@ -7,9 +7,9 @@ import emoji
 
 class twitterBot:
     def __init__(self):
-        self.bearer = "Bearer AAAAAAAAAAAAAAAAAAAAAJXpGgEAAAAA6H%2F1Yrym2IixdK0reD1nDRQvDe4%3DxX1nDLsJ7dSNQsvlVCHRvbdHCBkhVKCtFGw2rORNfwTnxSFRKb"
-        self.auth = tweepy.OAuthHandler("WKd7W3XoThJ9KCM02KXHtZzW9", "aHAd2Pr1eX8l2KZc6w9YQhKGqnhoV9w5jZYlBch2DJSEm77IJ7")
-        self.auth.set_access_token("1306375500021903360-6hYTD0Ue97uYBVhy7GJtOLsgp0xmCu", "kMIA2Wqgsizwockn0IEaVT4tjwVrImoFVwKktlq7LGLDd")
+        self.bearer = XXXXXXXXXXXXXXXXX
+        self.auth = tweepy.OAuthHandler("XXXXXXXXXXXXXX", "XXXXXXXXXXXXXXXXXX")
+        self.auth.set_access_token("XXXXXXXXXXXXXXX", "XXXXXXXXXXXXXXXXXXXX")
         self.api = tweepy.API(self.auth, wait_on_rate_limit=True,wait_on_rate_limit_notify=True)
         self.sentiment_url = "https://microsoft-text-analytics1.p.rapidapi.com/sentiment"
     def get_user_id(self,usernames):
@@ -46,7 +46,7 @@ class twitterBot:
             payload = payload_part1 + payload_part2 + payload_part3
             headers = {
                 'x-rapidapi-host': "microsoft-text-analytics1.p.rapidapi.com",
-                'x-rapidapi-key': "19125d29f9mshb70843d5cd2b7fcp1da10cjsndbe15b3016e6",
+                'x-rapidapi-key': "XXXXXXXXXXXXXXXXXXXXXXXXXX",
                 'content-type': "application/json",
                 'accept': "application/json"
                 }
